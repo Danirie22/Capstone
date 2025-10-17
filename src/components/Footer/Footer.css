@@ -1,0 +1,153 @@
+/* Footer Section */
+.footer {
+  background-color: #101540;
+  color: white;
+  padding: 48px 122px 0;
+}
+
+.footer-content {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 345px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.footer-logo .logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #1e3a5f;
+}
+
+.footer-logo .logo-title {
+  font-family: "Patrick Hand", cursive;
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.footer-logo .logo-subtitle {
+  font-family: "Patrick Hand", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.35;
+  letter-spacing: 0.15em;
+  margin: 0;
+  margin-left: 43px;
+}
+
+.footer-description {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #525151;
+  margin: 18px 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 86px;
+  margin-bottom: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column-title {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.625;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-link {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 20px 0;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.copyright-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.copyright-text {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: white;
+  margin: 0;
+}

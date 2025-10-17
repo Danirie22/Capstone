@@ -1,0 +1,137 @@
+/* Hero Section - Exact Figma Layout */
+.hero {
+  position: relative;
+  background-color: #d8e5f0;
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+.hero-frame-35 {
+  position: absolute;
+  top: 83px;
+  left: 108px;
+  width: 1224px;
+  height: 598px;
+}
+
+.hero-frame-34 {
+  position: absolute;
+  top: 179px;
+  left: 29px;
+  width: 487px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #1e3a5f;
+  margin: 0;
+  width: 487px;
+}
+
+.hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.83;
+  color: rgba(30, 58, 95, 0.8);
+  margin: 0;
+  width: 487px;
+}
+
+.hero-button {
+  position: absolute;
+  top: 192px;
+  left: 0px;
+  width: 245px;
+  height: 61px;
+  background-color: #5d4037;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.hero-button span {
+  position: absolute;
+  top: 19px;
+  left: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  width: 193px;
+  height: 24px;
+}
+
+.hero-group-33837 {
+  position: absolute;
+  top: -4px;
+  left: 416.36px;
+  width: 897.71px;
+  height: 600px;
+ 
+}
+
+.hero-image-33 {
+  position: absolute;
+  top: 12.41px;
+  left: 0;
+  width: 582.4px;
+  height: 581.34px;
+  object-fit: cover;
+}
+
+.hero-image-35 {
+  position: absolute;
+  top: 11.8px;
+  left: 466.45px;
+  width: 431.26px;
+  height: 588.2px;
+  object-fit: cover;
+}
+
+.hero-image-main {
+  position: absolute;
+  top: 0;
+  left: 290.85px;
+  width: 380.5px;
+  height: 572.44px;
+  object-fit: cover;
+}
+
+.hero-beat-heat {
+  position: absolute;
+  top: 42px;
+  left: 736px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #1e3a5f;
+  margin: 0;
+  width: 321px;
+  height: 47px;
+}
+
+.hero-image-41 {
+  position: absolute;
+  top: 91px;
+  left: 1186px;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+}

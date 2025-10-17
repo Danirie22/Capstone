@@ -1,0 +1,86 @@
+/* Features Section - Exact Figma Layout */
+.features {
+  position: relative;
+  background-color: #d8e5f0;
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.features-difference-title {
+  position: absolute;
+  top: 0px;
+  left: 397px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #1e3a5f;
+  margin-bottom: 20px;
+  
+  width: 645px;
+  height: 38px;
+  text-align: center;
+}
+
+.features-subtitle {
+  position: absolute;
+  top: 1439px;
+  left: 541px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.83;
+  color: rgba(30, 58, 95, 0.8);
+  margin: 0;
+  width: 357px;
+  height: 20px;
+}
+
+.features-frame-37 {
+  position: absolute;
+  top: 118px;
+  left: 100px;
+  width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 154px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 318px;
+}
+
+.feature-image-39,
+.feature-image-38,
+.feature-image-40 {
+  width: 121px;
+  height: 121px;
+  object-fit: cover;
+}
+
+.feature-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #1e3a5f;
+  margin: 0;
+  text-align: center;
+}
+
+.feature-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.39;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}

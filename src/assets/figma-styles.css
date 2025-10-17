@@ -1,0 +1,191 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;700&family=Baloo+2:wght@400;500;700&family=Patrick+Hand:wght@400&family=Anonymous+Pro:wght@400&display=swap");
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d8e5f0;
+  color: #1e3a5f;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #d8e4f0;
+  padding: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1228px;
+  height: 80px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #1e3a5f;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-family: "Patrick Hand", cursive;
+  font-size: 26px;
+  font-weight: 400;
+  color: #1e3a5f;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-family: "Patrick Hand", cursive;
+  font-size: 17px;
+  font-weight: 400;
+  color: #1e3a5f;
+  line-height: 1.35;
+  letter-spacing: 0.15em;
+  margin: 0;
+  margin-left: 43px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 100;
+  position: relative;
+}
+
+.nav-link {
+  padding: 16px 20px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(30, 58, 95, 0.6);
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: #8d6e63;
+}
+
+.nav-link:hover {
+  color: #1e3a5f;
+}
+
+.login-button {
+  padding: 16px 20px;
+  background: none;
+  border: 3px solid #5d4037;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1e3a5f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #5d4037;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+  .header-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .features-descriptions {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .testimonials-cards {
+    flex-direction: column;
+    gap: 20px;
+  
+  }
+
+  .testimonials-customers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .features-title,
+  .testimonials-title {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 30px 20px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
