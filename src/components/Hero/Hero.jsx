@@ -1,6 +1,7 @@
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
-function Hero() {
+function Hero({ linkTo = "/login" }) {
   return (
     <section className="hero">
       <div className="hero-frame-35">
@@ -10,9 +11,9 @@ function Hero() {
           </h1>
           <p className="hero-subtitle">Deliciously Affordable Coffee</p>
           
-          <button className="hero-button">
+          <Link to={linkTo} className="hero-button">
             <span>Grab a cup now!</span>
-          </button>
+          </Link>
         </div>
 
         <div className="hero-group-33837">

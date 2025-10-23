@@ -1,14 +1,15 @@
 // ...existing code...
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Features from "./components/Features/Features";
-import Testimonials from "./components/Testimonials/Testimonials";
+import HeaderLoggedIn from "./components/Header/HeaderLoggedIn";
 import Footer from "./components/Footer/Footer";
 import { MenuPage } from "./pages/Menu/Menu";
-import Profile from "./pages/Profile";
 import CartPage from "./pages/Cart";
 import Login from "./pages/Login";
+import LogHome from "./pages/LogHome";
+import MainHome from "./pages/MainHome";
+import MenuLoggedIn from "./pages/Menu/MenuLoggedIn";
+import RegisterPage from "./pages/Register";
 import "./assets/global.css";
 import "./assets/styleguide.css";
 import "./assets/figma-styles.css";
@@ -22,14 +23,13 @@ function App() {
         <Route
           path="/"
           element={
-            // wrapper must match the stylesheet's root selector
-            <div className="home-page">
-              <Header />
-              <Hero />
-              <Features />
-              <Testimonials />
-              <Footer />
-            </div>
+            <MainHome />
+          }
+        />
+        <Route
+          path="/log-home"
+          element={
+            <LogHome />
           }
         />
         <Route
@@ -43,10 +43,20 @@ function App() {
           }
         />
         <Route
+          path="/menu-log-in"
+          element={
+            <div className="menu-page">
+              <HeaderLoggedIn />
+              <MenuLoggedIn />
+              <Footer />
+            </div>
+          }
+        />
+        <Route
           path="/profile"
           element={
             <>
-              <Header />
+              <HeaderLoggedIn />
               <ProfilePage />
               <Footer />
             </>
@@ -56,7 +66,7 @@ function App() {
           path="/cart"
           element={
             <div className="cart-page">
-              <Header />
+              <HeaderLoggedIn />
               <CartPage />
               <Footer />
             </div>
@@ -68,6 +78,16 @@ function App() {
             <>
               <Header />
               <Login />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <>
+              <Header />
+              <RegisterPage />
               <Footer />
             </>
           }

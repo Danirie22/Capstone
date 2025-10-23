@@ -1,22 +1,23 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-function Login() {
+function Register() {
   const navigate = useNavigate();
 
-  const handleLogin = (event) => {
+  const handleRegister = (event) => {
     event.preventDefault();
-   
-    navigate("/log-home");
+    // In a real app, you would handle the registration logic here.
+    // For now, we'll just navigate to the login page.
+    navigate("/login");
   };
 
-  const loginContainerStyle = {
+  const containerStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     padding: "2rem",
-    minHeight: "calc(100vh - 150px)", // Adjust based on header/footer height
+    minHeight: "calc(100vh - 150px)",
     fontFamily:
       "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
   };
@@ -64,7 +65,7 @@ function Login() {
     marginTop: "1rem",
   };
 
-  const registrationLinkStyle = {
+  const loginLinkStyle = {
     textAlign: "center",
     marginTop: "1.5rem",
     fontSize: "1rem",
@@ -79,24 +80,53 @@ function Login() {
   };
 
   return (
-    <main style={loginContainerStyle}>
-      <form style={formStyle} onSubmit={handleLogin}>
-        <h2 style={{ textAlign: "center", margin: "0 0 1rem", fontSize: "2.5rem" }}>Login</h2>
+    <main style={containerStyle}>
+      <form style={formStyle} onSubmit={handleRegister}>
+        <h2
+          style={{ textAlign: "center", margin: "0 0 1rem", fontSize: "2.5rem" }}
+        >
+          Create Account
+        </h2>
         <div style={inputGroupStyle}>
-          <label htmlFor="email" style={labelStyle}>Email</label>
-          <input type="email" id="email" style={inputStyle} placeholder="you@example.com" />
+          <label htmlFor="fullName" style={labelStyle}>
+            Full Name
+          </label>
+          <input
+            type="text"
+            id="fullName"
+            style={inputStyle}
+            placeholder="Jake Williams"
+          />
         </div>
         <div style={inputGroupStyle}>
-          <label htmlFor="password" style={labelStyle}>Password</label>
-          <input type="password" id="password" style={inputStyle} placeholder="••••••••" />
+          <label htmlFor="email" style={labelStyle}>
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            style={inputStyle}
+            placeholder="you@example.com"
+          />
+        </div>
+        <div style={inputGroupStyle}>
+          <label htmlFor="password" style={labelStyle}>
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            style={inputStyle}
+            placeholder="••••••••"
+          />
         </div>
         <button type="submit" style={buttonStyle}>
-          Sign In
+          Register
         </button>
-        <p style={registrationLinkStyle}>
-          Don't have an account?
-          <Link to="/register" style={linkStyle}>
-            Register
+        <p style={loginLinkStyle}>
+          Already have an account?
+          <Link to="/login" style={linkStyle}>
+            Login
           </Link>
         </p>
       </form>
@@ -104,10 +134,10 @@ function Login() {
   );
 }
 
-export default function LoginPage() {
+export default function RegisterPage() {
   useEffect(() => {
-    document.title = "Login | Blue Grounds Coffee";
+    document.title = "Register | Blue Grounds Coffee";
   }, []);
 
-  return <Login />;
+  return <Register />;
 }
