@@ -5,13 +5,14 @@ import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
-import Menu from "./pages/Menu/Menu";
+import { MenuPage } from "./pages/Menu/Menu";
 import Profile from "./pages/Profile";
-import Cart from "./pages/Cart";
+import CartPage from "./pages/Cart";
 import Login from "./pages/Login";
 import "./assets/global.css";
 import "./assets/styleguide.css";
 import "./assets/figma-styles.css";
+import ProfilePage from "./pages/Profile";
 // ...existing code...
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
           element={
             <div className="menu-page">
               <Header />
-              <Menu />
+              <MenuPage />
               <Footer />
             </div>
           }
@@ -44,11 +45,11 @@ function App() {
         <Route
           path="/profile"
           element={
-            <div className="profile-page">
+            <>
               <Header />
-              <Profile />
+              <ProfilePage />
               <Footer />
-            </div>
+            </>
           }
         />
         <Route
@@ -56,7 +57,7 @@ function App() {
           element={
             <div className="cart-page">
               <Header />
-              <Cart />
+              <CartPage />
               <Footer />
             </div>
           }
@@ -64,16 +65,17 @@ function App() {
         <Route
           path="/login"
           element={
-            <div className="login-page">
+            <>
               <Header />
               <Login />
               <Footer />
-            </div>
+            </>
           }
         />
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;

@@ -1,10 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 
-export default function Login() {
+function Login() {
+  
   return (
     <main style={{ padding: 24 }}>
       <h1>Login</h1>
       <p>Sign in to your account.</p>
     </main>
   );
+}
+
+export default function LoginPage() {
+  useEffect(() => {
+    document.title = "Login | Blue Grounds Coffee";
+  }, []);
+
+  return <Login />;
 }
